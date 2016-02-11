@@ -1,0 +1,303 @@
+/*-----------------------------*\
+			Declaration general
+\*-----------------------------*/
+*{width:auto;}
+$colorRed :#ca3034;
+
+@mixin blckN($large){
+	width:$large;
+	position:relative;
+	overflow:hidden;
+}
+
+@mixin blockContent{
+	width:1000px !important;
+	margin:auto;
+	padding:0px 10px;
+}
+
+@mixin btn{
+	width: 205px;
+  height: 41px;
+	border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb(170,40,44) 0%, rgb(201,48,52) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(170,40,44) 0%, rgb(201,48,52) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(170,40,44) 0%, rgb(201,48,52) 100%);
+  cursor:pointer;
+  line-height:41px;
+  text-align:center;
+  font-size: 15px;
+  font-weith:100;
+  font-family: 'PT Sans', sans-serif;
+  color: rgb( 255, 255, 255 );
+}
+.left{float:left;}
+.right{float:right;}
+.red{
+	border:solid 1px red;
+}
+.green{
+	//border:solid 1px green;
+}
+/*-----------------------------*\
+			Declaration elements
+\*-----------------------------*/
+
+#wraper{
+	@include blckN(100%);
+}
+
+.block{
+	@include blckN(100%);
+	padding:0px;
+	border:solid 1px green;
+}
+
+.blockContent{
+	@include blockContent;
+}
+
+.header{
+	height:529px;	
+}
+
+.header_top{
+	height:45px;
+	margin-top:15px;
+	background-color:$colorRed;
+
+	.nav{width:100%;}
+	
+.logo{
+	width:122px;
+	height:44px !important;
+
+	img{margin-top:-5px; margin-left: -16px;}
+	}
+	.top-bar-right ul li a{
+		font-size: 15px;
+  	font-family: 'PT Sans', sans-serif;
+  	color: rgb( 255, 255, 255 );
+	}
+
+	.divider{
+		width: 2px;
+  	height: 45px;
+  	background-image: url('../../i/li-separator.png');
+		background-repeat: no-repeat;
+  	background-size: 100% 100%;
+	}
+}
+.top-bar{height:44px ;}
+
+
+.first{
+	height:483px;
+	background-image: url('../../i/bgHeader2.png');
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .first-content{
+  	width:1080px;
+  	height: 100%;
+  	margin:auto;
+  	background-image: url('../../i/bgHeaderImg.png');
+		background-repeat: no-repeat;
+  	background-position: 99% 27px;
+  }
+  .blockContent h3{
+  	font-size: 44px;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.136;
+  	font-family: 'PT Sans', sans-serif;
+  	margin-top:95px;
+  }
+
+  .blockContent p{
+  	font-size: 18px;
+  	font-family: 'PT Sans', sans-serif;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.455;
+  	margin-top:50px;
+  }
+}
+
+
+
+.page{
+	//height: 414px;
+	position:relative;
+	overflow:hidden;
+	background-color: rgb( 255, 255, 255 );
+  box-shadow: 0px 1px 3px 0px rgb( 0, 0, 0 );
+
+  .group-img {
+  	position:relative;
+  	text-align:center;
+  	margin-top:33px;
+
+  	.group-img_bg{
+  		width:75%;
+  		height:100px;
+  		margin-left:12.5%;
+  		position:absolute;
+
+  		.group-img_bg_elem{
+  			height:100px;
+  			background-image: url('../../i/trai.png');
+				background-repeat: no-repeat;
+  			background-position:center;
+  			background-size:50% 5px ;
+  		}
+  	}
+  }
+  .group-img span{
+  	display:block;
+  	font-size: 15px;
+  	font-family: 'PT Sans', sans-serif;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.6;
+  	text-align: center;
+  	margin-top:30px;
+  }
+  .page_button{
+  	@include btn;
+  	margin: 45px auto;
+  }
+  .blockContent h5{
+  	font-size: 22px;
+  	font-family: 'PT Sans', sans-serif;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1;
+  	margin-top: 50px !important;
+  }
+}
+
+.second{
+	height:525px;
+	position:relative;
+
+	.second_bg_left{
+		width:280px;
+		height:100%;
+		float:left;
+		background-image: url('../../i/second_bg_left.png');
+		background-repeat: no-repeat;
+		background-size:68% 89%;
+  	background-position: 0px 58px;
+	}
+
+	.second_bg_right{
+		@extend .second_bg_left;
+		width:450px;
+		float:right;
+		background-image: url('../../i/second_bg_right.png');
+		background-repeat: no-repeat;
+		background-size: 30% 89%;
+    background-position: 100% 0px;
+	}
+	.second_G_content{
+		width:100%;
+  	height: 100%;
+  	margin:auto;
+  	z-index:100;
+  	position:absolute;
+  	overflow:hidden;
+  	background-image: url('../../i/second_bg_content.png');
+		background-repeat: no-repeat;
+    background-size: 52% 105%;
+    background-position: 120px 100%;
+
+    .blockContent{position:relative;overflow:hidden;}
+    .minBlock{width:100%; min-height:45px; text-align:right;position:relative;overflow:hidden;}
+	}
+
+	.rectangle{
+		width: 100px;
+  	height: 27px;
+  	margin-top:50px;
+  	float:right;
+  	//margin-left:38%;
+  	//z-index: 9;
+  	background-image: url('../../i/bg_rectangle.png');
+		background-repeat: no-repeat;
+  	background-size: 100% 100%;
+	}
+	.second_right h4{
+		width:270px;
+		font-size: 25px;
+  	font-family: 'PT Sans', sans-serif;
+  	margin-top:20px;
+  	margin-left:20px;
+  	color: rgb( 54, 67, 85 );
+  	text-align:right;
+  	line-height: 1.455;
+	}
+	.second_right h4 span{
+		font-size: 28px;
+		color:$colorRed;
+		font-weight: bold;
+	}
+	.second_right p{
+		margin-top:60px;
+		font-size: 18px;
+  	font-family: "Myriad Pro";
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.455;
+	}
+	.second_button{
+		@include btn;
+		position:absolute;
+		//top:290px;
+  	right:0px !important;
+  	bottom:5px !important;
+  	width: 143px;
+  	height: 41px;
+
+	}
+	.minBlock3{
+		margin-top:40px !important;
+	}
+}
+
+	
+.menu{@include blckN(100%);}
+	
+
+@media (max-width: 1000px){
+ .blockContent , .first-content{
+	width:100% !important;
+	}
+	.first-content{background-size:50% 64%;}
+	.header{height:390px;	}
+	.second_right h4{margin:auto !important;}		
+	.second_G_content , .group-img_bg_elem{	background-image:none !important;}
+	.second_bg_left , .second_bg_right{display:none;}
+	.second {height: 355px;background-color: #f4f4f4;}
+    
+}
+
+@media (max-width: 870px){
+	.group-img_bg_elem{	background-size:40% 5px !important;}		
+}
+
+@media (max-width: 780px){
+	.blockContent h3{font-size: 34px !important;}
+  .blockContent p{font-size: 15px !important;} 	
+  .group-img_bg_elem{	background-size:34% 5px !important;}
+}
+
+@media (max-width: 639px){
+	.header{max-height:280px !important;}
+	.header_top{background-color:black;	}
+	.top-bar, .top-bar ul{background-color:#424242;}
+	.top-bar ul .logo{display:none;}
+	.blockContent h3{margin-top:12px !important; text-align:center;}
+	.blockContent p{margin-top:8px !important; text-align:center;}
+	.first-content{background-image: none !important;}
+	.second_G_content , .group-img_bg_elem{	background-image:none !important;}
+	.second_bg_left , .second_bg_right{display:none;}
+	.second_right h4 {width:100% !important;font-size:20px; text-align:center;}
+		
+
+}
