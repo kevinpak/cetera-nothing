@@ -2359,7 +2359,7 @@ select {
   line-height: 1;
   padding-top: 0;
   padding-bottom: 0;
-  padding: 0.7rem 1rem; }
+ // padding: 0.7rem 1rem; }
 
 .no-js [data-responsive-menu] ul {
   display: none; }

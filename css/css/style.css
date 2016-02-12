@@ -10,9 +10,6 @@
 .right {
   float: right; }
 
-.red {
-  border: solid 1px red; }
-
 /*-----------------------------*\
 			Declaration elements
 \*-----------------------------*/
@@ -21,38 +18,37 @@
   position: relative;
   overflow: hidden; }
 
-.block {
+.i-bolock {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 0px;
-  border: solid 1px green; }
+  padding: 0px; }
 
-.blockContent {
+.i-blockContent {
   width: 1000px !important;
   margin: auto;
   padding: 0px 10px; }
 
-.header {
+.b-header {
   height: 529px; }
 
-.header_top {
+.b-header_top {
   height: 45px;
   margin-top: 15px;
   background-color: #ca3034; }
-  .header_top .nav {
+  .b-header_top .nav {
     width: 100%; }
-  .header_top .logo {
+  .b-header_top .b-header_top_menu_left_logo {
     width: 122px;
     height: 44px !important; }
-    .header_top .logo img {
-      margin-top: -5px;
-      margin-left: -16px; }
-  .header_top .top-bar-right ul li a {
+    .b-header_top .b-header_top_menu_left_logo img {
+      margin-top: 0px;
+      margin-left: 0px; }
+  .b-header_top .top-bar-right ul li a {
     font-size: 15px;
     font-family: 'PT Sans', sans-serif;
     color: white; }
-  .header_top .divider {
+  .b-header_top .divider {
     width: 2px;
     height: 45px;
     background-image: url("../../i/li-separator.png");
@@ -62,52 +58,54 @@
 .top-bar {
   height: 44px; }
 
-.first {
+.b-first {
   height: 483px;
   background-image: url("../../i/bgHeader2.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
-  .first .first-content {
+  background-size: 100% 100%;
+  margin-top: 0px; }
+  .b-first .b-first-content {
     width: 1080px;
     height: 100%;
     margin: auto;
     background-image: url("../../i/bgHeaderImg.png");
     background-repeat: no-repeat;
     background-position: 99% 27px; }
-  .first .blockContent h3 {
+  .b-first .i-blockContent h3 {
     font-size: 44px;
     color: #364355;
     line-height: 1.136;
     font-family: 'PT Sans', sans-serif;
     margin-top: 95px; }
-  .first .blockContent p {
+  .b-first .i-blockContent p {
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
     color: #364355;
     line-height: 1.455;
     margin-top: 50px; }
 
-.page {
+.b-page {
   position: relative;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0px 1px 3px 0px black; }
-  .page .group-img {
+  box-shadow: 0px 1px 3px 0px black;
+  z-index: 800; }
+  .b-page .b-page-i-blockContent_group-img {
     position: relative;
     text-align: center;
     margin-top: 33px; }
-    .page .group-img .group-img_bg {
+    .b-page .b-page-i-blockContent_group-img .b-page-i-blockContent_group-img_bg {
       width: 75%;
       height: 100px;
       margin-left: 12.5%;
       position: absolute; }
-      .page .group-img .group-img_bg .group-img_bg_elem {
+      .b-page .b-page-i-blockContent_group-img .b-page-i-blockContent_group-img_bg .b-page-i-blockContent_group-img_bg_elem {
         height: 100px;
         background-image: url("../../i/trai.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50% 5px; }
-  .page .group-img span {
+  .b-page .b-page-i-blockContent_group-img span {
     display: block;
     font-size: 15px;
     font-family: 'PT Sans', sans-serif;
@@ -115,7 +113,7 @@
     line-height: 1.6;
     text-align: center;
     margin-top: 30px; }
-  .page .page_button {
+  .b-page .b-page_button {
     width: 205px;
     height: 41px;
     border-radius: 3px;
@@ -130,17 +128,17 @@
     font-family: 'PT Sans', sans-serif;
     color: white;
     margin: 45px auto; }
-  .page .blockContent h5 {
+  .b-page .i-blockContent h5 {
     font-size: 22px;
     font-family: 'PT Sans', sans-serif;
     color: #364355;
     line-height: 1;
     margin-top: 50px !important; }
 
-.second {
+.b-second {
   height: 525px;
   position: relative; }
-  .second .second_bg_left, .second .second_bg_right {
+  .b-second .b-second_bg_left, .b-second .b-second_bg_right {
     width: 280px;
     height: 100%;
     float: left;
@@ -148,14 +146,14 @@
     background-repeat: no-repeat;
     background-size: 68% 89%;
     background-position: 0px 58px; }
-  .second .second_bg_right {
+  .b-second .b-second_bg_right {
     width: 450px;
     float: right;
     background-image: url("../../i/second_bg_right.png");
     background-repeat: no-repeat;
     background-size: 30% 89%;
     background-position: 100% 0px; }
-  .second .second_G_content {
+  .b-second .b-second_G_content {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -166,16 +164,16 @@
     background-repeat: no-repeat;
     background-size: 52% 105%;
     background-position: 120px 100%; }
-    .second .second_G_content .blockContent {
+    .b-second .b-second_G_content .i-blockContent {
       position: relative;
       overflow: hidden; }
-    .second .second_G_content .minBlock {
+    .b-second .b-second_G_content .b-second_G_content_minBlock {
       width: 100%;
       min-height: 45px;
       text-align: right;
       position: relative;
       overflow: hidden; }
-  .second .rectangle {
+  .b-second .rectangle {
     width: 100px;
     height: 27px;
     margin-top: 50px;
@@ -183,7 +181,7 @@
     background-image: url("../../i/bg_rectangle.png");
     background-repeat: no-repeat;
     background-size: 100% 100%; }
-  .second .second_right h4 {
+  .b-second .b-second_right h4 {
     width: 270px;
     font-size: 25px;
     font-family: 'PT Sans', sans-serif;
@@ -192,17 +190,17 @@
     color: #364355;
     text-align: right;
     line-height: 1.455; }
-  .second .second_right h4 span {
+  .b-second .b-second_right h4 span {
     font-size: 28px;
     color: #ca3034;
     font-weight: bold; }
-  .second .second_right p {
+  .b-second .b-second_right p {
     margin-top: 60px;
     font-size: 18px;
     font-family: "Myriad Pro";
     color: #364355;
     line-height: 1.455; }
-  .second .second_button {
+  .b-second .b-second_button {
     width: 205px;
     height: 41px;
     border-radius: 3px;
@@ -221,7 +219,7 @@
     bottom: 5px !important;
     width: 143px;
     height: 41px; }
-  .second .minBlock3 {
+  .b-second .b-second_G_content_minBlock3 {
     margin-top: 40px !important; }
 
 .menu {
@@ -230,70 +228,70 @@
   overflow: hidden; }
 
 @media (max-width: 1000px) {
-  .blockContent, .first-content {
+  .i-blockContent, .b-first-content {
     width: 100% !important; }
 
-  .first-content {
+  .b-first-content {
     background-size: 50% 64%; }
 
-  .header {
+  .b-header {
     height: 390px; }
 
-  .second_right h4 {
+  .b-second_right h4 {
     margin: auto !important; }
 
-  .second_G_content, .group-img_bg_elem {
+  .b-second_G_content, .b-page-i-blockContent_group-img_bg_elem {
     background-image: none !important; }
 
-  .second_bg_left, .second .second_bg_right, .second_bg_right {
+  .b-second_bg_left, .b-second .b-second_bg_right, .b-second_bg_right {
     display: none; }
 
-  .second {
+  .b-second {
     height: 355px;
     background-color: #f4f4f4; } }
 @media (max-width: 870px) {
-  .group-img_bg_elem {
+  .b-page-i-blockContent_group-img_bg_elem {
     background-size: 40% 5px !important; } }
 @media (max-width: 780px) {
-  .blockContent h3 {
+  .i-blockContent h3 {
     font-size: 34px !important; }
 
-  .blockContent p {
+  .i-blockContent p {
     font-size: 15px !important; }
 
-  .group-img_bg_elem {
+  .b-page-i-blockContent_group-img_bg_elem {
     background-size: 34% 5px !important; } }
 @media (max-width: 639px) {
-  .header {
+  .b-header {
     max-height: 280px !important; }
 
-  .header_top {
+  .b-header_top {
     background-color: black; }
 
   .top-bar, .top-bar ul {
     background-color: #424242; }
 
-  .top-bar ul .logo {
+  .top-bar ul .b-header_top_menu_left_logo {
     display: none; }
 
-  .blockContent h3 {
+  .i-blockContent h3 {
     margin-top: 12px !important;
     text-align: center; }
 
-  .blockContent p {
+  .i-blockContent p {
     margin-top: 8px !important;
     text-align: center; }
 
-  .first-content {
+  .b-first-content {
     background-image: none !important; }
 
-  .second_G_content, .group-img_bg_elem {
+  .b-second_G_content, .b-page-i-blockContent_group-img_bg_elem {
     background-image: none !important; }
 
-  .second_bg_left, .second .second_bg_right, .second_bg_right {
+  .b-second_bg_left, .b-second .b-second_bg_right, .b-second_bg_right {
     display: none; }
 
-  .second_right h4 {
+  .b-second_right h4 {
     width: 100% !important;
     font-size: 20px;
     text-align: center; } }

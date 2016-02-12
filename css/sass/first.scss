@@ -1,0 +1,31 @@
+.b-first{
+	height:483px;
+	background-image: url('../../i/bgHeader2.png');
+	background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top:0px;
+
+  .b-first-content{
+  	width:1080px;
+  	height: 100%;
+  	margin:auto;
+  	background-image: url('../../i/bgHeaderImg.png');
+		background-repeat: no-repeat;
+  	background-position: 99% 27px;
+  }
+  .i-blockContent h3{
+  	font-size: 44px;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.136;
+  	font-family: 'PT Sans', sans-serif;
+  	margin-top:95px;
+  }
+
+  .i-blockContent p{
+  	font-size: 18px;
+  	font-family: 'PT Sans', sans-serif;
+  	color: rgb( 54, 67, 85 );
+  	line-height: 1.455;
+  	margin-top:50px;
+  }
+}
